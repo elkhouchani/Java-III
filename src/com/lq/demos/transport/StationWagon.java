@@ -1,4 +1,4 @@
-package com.lq.demos.tranport;
+package com.lq.demos.transport;
 
 public class StationWagon extends Car {
 
@@ -22,11 +22,18 @@ public class StationWagon extends Car {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public void setCargoLoad(int currentCargoLoad) {
+	public void setCurrentCargoLoad(int currentCargoLoad) {
 		this.currentCargoLoad=currentCargoLoad;
 	}
 	private int cargoCapacity;
 	private int currentCargoLoad;
+
 	
+	//-------------- OVERRIDING(Polymorphism) ------------
+	
+	@Override
+	public void setSpeed(int newSpeed) {
+		super.setSpeed(newSpeed - (currentCargoLoad/100));
+	}
 	
 }

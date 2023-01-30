@@ -1,4 +1,4 @@
-package com.lq.demos.tranport;
+package com.lq.demos.transport;
 
 import static java.lang.Math.min;
 
@@ -65,6 +65,7 @@ public class Car {
 		this.engineState = engineState;
 	}
 	// ** OVERLOADING ** THE setEngineState method
+	// Overload = Same name with different signature
 	public void setEngineState(boolean engineState, int newSpeed) {
 		this.engineState=engineState;
 		speed=newSpeed;

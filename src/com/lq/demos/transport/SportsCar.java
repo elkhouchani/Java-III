@@ -1,4 +1,4 @@
-package com.lq.demos.tranport;
+package com.lq.demos.transport;
 
 public class SportsCar extends Car {
 	
